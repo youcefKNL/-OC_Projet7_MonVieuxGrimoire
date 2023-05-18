@@ -1,4 +1,1 @@
-controllers
-middleware
-models
-routes
+controllers, middleware, models, routes
