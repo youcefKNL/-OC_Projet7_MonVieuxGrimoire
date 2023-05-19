@@ -1,25 +1,8 @@
-// const express = require("express");
-// const port = 5000;
-// const app = express();
-
-// app.listen(port, () => console.log("Le serveur a démarré au port" + port));
-
-//***************************************************************** */
-
-// const http = require("http");
-
-// const server = http.createServer((req, res) => {
-//   res.end("Voilà la réponse du serveur !");
-// });
-
-// server.listen(process.env.PORT || 3000);
-
-// *****************************************************************************
-
 const http = require("http");
 const app = require("./config/app");
+const connectDataBase = require("./config/dataBase");
 
-// *******************************************************************************************************************************************
+// *********************************************************************************************************
 //la fonction normalizePort renvoie un port valide, qu'il soit fourni sous la forme d'un numéro ou d'une chaîne
 const normalizePort = (val) => {
   const port = parseInt(val, 10); // Conversion de la valeur en un entier (nombre de port)
@@ -37,7 +20,7 @@ const normalizePort = (val) => {
 const port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
 
-// *******************************************************************************************************************************************
+// *********************************************************************************************************
 //la fonction errorHandler  recherche les différentes erreurs et les gère de manière appropriée. Elle est ensuite enregistrée dans le serveur
 const errorHandler = (error) => {
   if (error.syscall !== "listen") {
@@ -68,11 +51,12 @@ const server = http.createServer(app);
 
 server.on("error", errorHandler); //Capture l erreur qui rentre en paramètre de la fonction pour traitement
 
-//un écouteur d'évènements  consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.
+//un écouteur d'évènements  consignant le port ou le canal
 server.on("listening", () => {
   const address = server.address();
   const bind = typeof address === "string" ? "pipe " + address : "port " + port;
   console.log("Serveur en éxécution sur le " + bind);
 });
 
-server.listen(port); //Mettre en route le serveur sur port spécifié
+server.listen(port); // Mettre en route le serveur sur port spécifié
+connectDataBase(); // Connexion à Base de donnée MongoDb Atlas Free

@@ -1,5 +1,3 @@
-const mongoose = require("mongoose");
-
 const express = require("express");
 
 const bodyParser = require("body-parser");
@@ -10,13 +8,17 @@ const bodyParser = require("body-parser");
 
 const path = require("path");
 
-mongoose
-  .connect(
-    "mongodb+srv://sefyu:Sefyu+91@cluster0.6pejpti.mongodb.net/?retryWrites=true&w=majority",
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
-  .then(() => console.log("Connexion à MongoDB réussie !"))
-  .catch(() => console.log("Connexion à MongoDB échouée !"));
+//Connexion à Data Base MongoDb
+// mongoose
+//   .connect(
+//     "mongodb+srv://John:doe@mon-vieux-grimoire.hamtkym.mongodb.net/dataBase",
+//     {
+//       useNewUrlParser: true,
+//       useUnifiedTopology: true,
+//     }
+//   )
+//   .then(() => console.log("Connexion à MongoDB réussie !"))
+//   .catch((err) => console.log("Connexion à MongoDB échouée ! Erreur : " + err));
 
 const app = express();
 
