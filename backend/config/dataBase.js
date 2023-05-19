@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const connectDataBase = async () => {
+const connectApi = async () => {
   try {
     await mongoose.connect(
       "mongodb+srv://John:doe@mon-vieux-grimoire.hamtkym.mongodb.net/dataBase",
@@ -9,10 +9,12 @@ const connectDataBase = async () => {
         useUnifiedTopology: true,
       }
     );
-    console.log("Connexion à MongoDB réussie !");
+    console.log("Connexion à la base de donnée MongoDB réussie !");
   } catch (err) {
-    console.log("Connexion à MongoDB échouée ! Erreur : " + err);
+    console.log(
+      "Connexion à la base de donnée MongoDB échouée ! Erreur : " + err
+    );
   }
 };
 
-module.exports = connectDataBase;
+module.exports = connectApi;
