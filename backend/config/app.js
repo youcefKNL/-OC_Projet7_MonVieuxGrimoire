@@ -1,54 +1,47 @@
 const express = require("express");
 
-const bodyParser = require("body-parser");
-
-// const stuffRoutes = require("./routes/stuff");
-
-// const userRoutes = require("./routes/user");
-
-const path = require("path");
-
-//Connexion à Data Base MongoDb
-// mongoose
-//   .connect(
-//     "mongodb+srv://John:doe@mon-vieux-grimoire.hamtkym.mongodb.net/dataBase",
-//     {
-//       useNewUrlParser: true,
-//       useUnifiedTopology: true,
-//     }
-//   )
-//   .then(() => console.log("Connexion à MongoDB réussie !"))
-//   .catch((err) => console.log("Connexion à MongoDB échouée ! Erreur : " + err));
+const bodyParser = require("body-parser"); //Package gére à analyser data dans corps des requêtes
 
 const app = express();
 
-// *****************************************************************
-// accept toute les requêtes à delete après juste test 1er fois server
-app.use((req, res) => {
-  res.json({ message: "Votre requête TEST Postman a bien été reçue !" });
-});
-// ***************************************************************
+const connectApi = require("../config/dataBase");
 
-//Custom le Headers des requêtes!
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
-  );
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, PUT, DELETE, PATCH, OPTIONS"
-  );
-  next();
-});
+const testRoute = require("../routes/test.routes");
 
+const bookRoutes = require("../routes/book.routes");
+
+const userRoute = require("../routes/user.routes");
+
+//const corsController = require("../middleware/cors.middleware");
+
+const corsMiddleware = require("../middlewares/cors.middleware");
+
+//const path = require("path");
+
+// ***************************************************************************************************************//
+//*************************************-Connexion à Data Base MongoDb
+connectApi();
+
+// ***************************************************************************************************************//
+//*************************************-Custom le Headers des requêtes!
+//app.use(corsController);
+app.use(corsMiddleware);
+
+//*************************************-Récuperer la data sous forme Json
 app.use(bodyParser.json());
 
-// app.use("/api/stuff", stuffRoutes);
+//*************************************-Récuperer la data encodé sous forme URL
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.use("/api/stuff", stuffRoutes);
-// app.use("/api/auth", userRoutes);
+// ***************************************************************************************************************//
+//*************************************-1er ROUTES TEST :
+app.use("/api/auth", testRoute);
+
+//*************************************-ROUTES Book :
+app.use("/api/books", bookRoutes);
+
+//*************************************-ROUTES Authentification :
+app.use("/api/auth", userRoute);
 
 // app.use("/images", express.static(path.join(__dirname, "images")));
 
