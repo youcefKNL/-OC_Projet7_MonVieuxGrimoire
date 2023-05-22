@@ -2,6 +2,8 @@ const express = require("express");
 
 const bodyParser = require("body-parser"); //Package gére à analyser data dans corps des requêtes
 
+const path = require("path"); // Package qui gère le chemin des fichier
+
 const app = express();
 
 const connectApi = require("../config/dataBase");
@@ -12,11 +14,7 @@ const bookRoutes = require("../routes/book.routes");
 
 const userRoute = require("../routes/user.routes");
 
-//const corsController = require("../middleware/cors.middleware");
-
 const corsMiddleware = require("../middlewares/cors.middleware");
-
-//const path = require("path");
 
 // ***************************************************************************************************************//
 //*************************************-Connexion à Data Base MongoDb
@@ -24,7 +22,7 @@ connectApi();
 
 // ***************************************************************************************************************//
 //*************************************-Custom le Headers des requêtes!
-//app.use(corsController);
+
 app.use(corsMiddleware);
 
 //*************************************-Récuperer la data sous forme Json
@@ -37,12 +35,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //*************************************-1er ROUTES TEST :
 app.use("/api/auth", testRoute);
 
-//*************************************-ROUTES Book :
+//*************************************-ROUTES BOOK :
 app.use("/api/books", bookRoutes);
 
-//*************************************-ROUTES Authentification :
+//*************************************-ROUTES AUTHentification :
 app.use("/api/auth", userRoute);
 
-// app.use("/images", express.static(path.join(__dirname, "images")));
+//*************************************-ROUTES lecture des IMG :
+app.use("/book_picture", express.static(path.join(__dirname, "../uploads")));
 
 module.exports = app;
