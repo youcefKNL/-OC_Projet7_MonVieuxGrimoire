@@ -18,4 +18,16 @@ const storage = multer.diskStorage({
   },
 });
 
-module.exports = multer({ storage: storage }).single("image");
+//Vérification Filtre le type de ficher upload
+const fileFilter = (req, file, callback) => {
+  // Vérifie le type de fichier
+  if (file.mimetype.startsWith("image/")) {
+    callback(null, true); // Accepte le fichier
+  } else {
+    callback(new Error("Le fichier doit être une image..."), false); // Rejette le fichier
+  }
+};
+
+module.exports = multer({ storage: storage, fileFilter: fileFilter }).single(
+  "image"
+);

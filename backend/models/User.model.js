@@ -7,9 +7,9 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
     unique: true,
-    trim: true,
+    trim: true, //suprime les Espaces
     lowercase: true, //Pour ne pas tricher avec les maj&min
-    validate: [isEmail],
+    validate: [isEmail], //Regex mail
   },
   password: { type: String, required: true, trim: true },
 });
