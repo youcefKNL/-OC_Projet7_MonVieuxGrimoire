@@ -77,6 +77,7 @@ exports.addBook = (req, res) => {
     imageUrl: `${req.protocol}://${req.get("host")}/book_picture/${
       req.file.filename
     }`,
+    // averageRating: 0,
   });
   book
     .save()
