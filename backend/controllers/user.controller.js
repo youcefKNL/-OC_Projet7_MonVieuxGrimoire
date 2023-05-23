@@ -44,9 +44,9 @@ exports.logIn = (req, res) => {
           }
           res.status(200).json({
             userId: user._id,
-            token: jwt.sign({ userId: user._id }, "RANDOM_TOKEN_SECRET", {
+            token: jwt.sign({ userId: user._id }, process.env.TOKEN, {
               expiresIn: "3h",
-            }), //in IRL hide RANDOM_TOKEN_SECRET .env
+            }),
           });
         })
         .catch((error) => res.status(500).json({ error }));

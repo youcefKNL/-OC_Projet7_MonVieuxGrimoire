@@ -82,6 +82,9 @@ exports.addBook = (req, res) => {
   book
     .save()
     .then(() => {
+      console.log(
+        `Livre ajouté dans la Base de donnée => Titre:${bookObject.title}`
+      );
       res.status(201).json({ message: "Livre enregistré!" });
     })
     .catch((error) => {

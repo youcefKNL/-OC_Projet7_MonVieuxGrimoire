@@ -1,5 +1,5 @@
 const http = require("http"); // Package  création server et gère requête et response http
-const app = require("./config/app");
+const app = require("./app");
 
 // ***************************************************************************
 //la fonction normalizePort renvoie un port valide, qu'il soit fourni sous la forme d'un numéro ou d'une chaîne
@@ -16,7 +16,7 @@ const normalizePort = (val) => {
   }
   return false; // Retourne false si le nombre de port est non valide
 };
-const port = normalizePort(process.env.PORT || "4000");
+const port = normalizePort(process.env.PORT || "5000");
 app.set("port", port);
 
 // ***************************************************************************
@@ -55,9 +55,7 @@ server.on("listening", () => {
   const address = server.address();
   const bind = typeof address === "string" ? "pipe " + address : "port " + port;
   console.log("Serveur en éxécution sur le " + bind);
-  if (port === 4000) {
-    console.log("Simulation serveur URL: http://localhost:" + port);
-  }
+  console.log("Simulation serveur URL: http://localhost:" + port);
 });
 
 server.listen(port); // Mettre en route le serveur sur port spécifié

@@ -1,4 +1,4 @@
-const multer = require("multer");
+const multer = require("multer"); //Package qui gère le upload de fichier
 
 const MIME_TYPES = {
   "image/jpg": "jpg",
@@ -6,10 +6,13 @@ const MIME_TYPES = {
   "image/png": "png",
 };
 
-// Configuration de Multer pour gérer les fichiers
+// Configuration de Multer pour gérer la Limite de taille de fichier en octets (4 Mo)
+const maxFileSize = 4 * 1024 * 1024;
+
+// Configuration de Multer pour gérer la destination des fichiers
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
-    callback(null, "uploads"); // Répertoire de destination des fichiers
+    callback(null, "uploads"); //
   },
   filename: (req, file, callback) => {
     const name = file.originalname.split(" ").join("_");
@@ -18,7 +21,7 @@ const storage = multer.diskStorage({
   },
 });
 
-//Vérification Filtre le type de ficher upload
+// Vérification du type de fichier uploadé
 const fileFilter = (req, file, callback) => {
   // Vérifie le type de fichier
   if (file.mimetype.startsWith("image/")) {
@@ -28,6 +31,8 @@ const fileFilter = (req, file, callback) => {
   }
 };
 
-module.exports = multer({ storage: storage, fileFilter: fileFilter }).single(
-  "image"
-);
+module.exports = multer({
+  storage: storage,
+  fileFilter: fileFilter,
+  limits: { fileSize: maxFileSize },
+}).single("image");
