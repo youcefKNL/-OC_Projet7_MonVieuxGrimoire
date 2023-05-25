@@ -16,7 +16,7 @@ const userRoute = require("./routes/user.routes");
 
 const corsMiddleware = require("./middlewares/cors.middleware");
 
-require("dotenv").config({ path: "./config/.env" });
+require("dotenv").config({ path: ".env" });
 
 // ***************************************************************************************************************//
 //*************************************-Connexion à Data Base MongoDb
