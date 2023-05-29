@@ -2,10 +2,13 @@ const cors = require("cors"); // Package qui gère le CORS des en-tête
 
 // Configurez les options CORS selon vos besoins
 const corsOptions = {
-  origin: "*", // Autoriser toutes les origines
+  // Autoriser toutes les origines
+  origin: "*",
+  // En-têtes autorisés
   allowedHeaders:
-    "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization", // En-têtes autorisés
-  methods: "GET, POST, PUT, DELETE, PATCH, OPTIONS", // Méthodes HTTP autorisées
+    "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization",
+  // Méthodes HTTP autorisées
+  methods: "GET, POST, PUT, DELETE, PATCH, OPTIONS",
 };
 
 // Créez le middleware CORS avec les options configurées

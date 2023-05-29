@@ -1,4 +1,4 @@
-const Jimp = require("jimp");
+const Jimp = require("jimp"); //Package qui gére le redimenssionement des img & mimes
 
 const resizeImageMiddleware = (req, res, next) => {
   if (!req.file) {

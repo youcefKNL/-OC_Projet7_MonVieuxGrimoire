@@ -10,9 +10,10 @@ app.set("port", port);
 
 const server = http.createServer(app);
 
+// *********************************************************************************
+
 //Capture l erreur qui rentre en paramètre de la fonction pour traitement
 server.on("error", serverController.errorHandler);
-
 //un écouteur d'évènements  consignant le port ou le canal
 server.on("listening", () => {
   const address = server.address();
@@ -20,6 +21,5 @@ server.on("listening", () => {
   console.log("Serveur en éxécution sur le " + bind);
   console.log("Simulation serveur URL: http://localhost:" + port);
 });
-
 // Mettre en route le serveur sur port spécifié
 server.listen(port);

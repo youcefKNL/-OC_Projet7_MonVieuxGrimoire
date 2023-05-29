@@ -46,4 +46,6 @@ app.use("/api/auth", userRoute);
 //*************************************-ROUTES lecture des IMG :
 app.use("/book_picture", express.static(path.join(__dirname, "/uploads")));
 
+// ***************************************************************************************************************//
+
 module.exports = app;
