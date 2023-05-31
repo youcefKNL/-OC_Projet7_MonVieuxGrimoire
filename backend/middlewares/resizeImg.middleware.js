@@ -43,7 +43,7 @@ const resizeImageMiddleware = async (req, res, next) => {
     await image
       .resize(Jimp.AUTO, 700)
       .quality(80) // Ajuster la qualité de l'image JPG (0-100)
-      .contain(500, 700)
+      .contain(500, Jimp.AUTO)
       .writeAsync(imagePath); // Écrire l'image redimensionnée en écrasant l'ancienne image
 
     console.log(
