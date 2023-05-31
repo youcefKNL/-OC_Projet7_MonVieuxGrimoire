@@ -28,7 +28,7 @@ connectApi();
 app.use(corsMiddleware);
 
 //*************************************-Récuperer la data sous forme Json
-app.use(bodyParser.json());
+app.use(bodyParser.json()); // <= ancienne technique / new => app.use(express.json())
 
 //*************************************-Récuperer la data encodé sous forme URL
 app.use(bodyParser.urlencoded({ extended: true }));

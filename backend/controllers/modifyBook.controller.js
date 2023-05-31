@@ -1,105 +1,56 @@
-// const bookModel = require("../models/Book.model");
-
-// exports.modifyBook = (req, res) => {
-//   const bookObject = req.file
-//     ? {
-//         ...JSON.parse(req.body.book),
-//         userId: req.auth.userId,
-//         imageUrl: `${req.protocol}://${req.get("host")}/book_picture/${
-//           req.file.filename
-//         }`,
-//       }
-//     : { ...req.body };
-
-//   delete bookObject._userId;
-
-//   bookModel
-//     .findOne({ _id: req.params.id })
-//     .then((book) => {
-//       if (book.userId !== req.auth.userId) {
-//         res.status(401).json({ message: "Non autorisé" });
-//       } else {
-//         bookModel
-//           .updateOne(
-//             { _id: req.params.id },
-//             { ...bookObject, _id: req.params.id }
-//           )
-//           .then(() => res.status(200).json({ message: "Objet modifié !" }))
-//           .catch((error) => res.status(401).json({ error }));
-//       }
-//     })
-//     .catch((error) => {
-//       console.log(error);
-//       res.status(400).json({ error });
-//     });
-// };
-
 const bookModel = require("../models/Book.model");
 
-exports.modifyBook = async (req, res) => {
+exports.modifyBook = (req, res) => {
+  const { id } = req.params;
+  // vérifie si un fichier a été inclus dans la requête.
   const bookObject = req.file
     ? {
         ...JSON.parse(req.body.book),
-        userId: req.auth.userId,
+
         imageUrl: `${req.protocol}://${req.get("host")}/book_picture/${
           req.file.filename
         }`,
       }
     : { ...req.body };
 
+  //  supprime la clé "_userId" de l'objet "bookObject"=> garantit que l'utilisateur ne peut pas modifier cette clé.
   delete bookObject._userId;
+  bookModel
+    .findById(id)
+    .then((book) => {
+      // vérifie si l'utilisateur est autorisé à modifier cet objet
+      if (book.userId != req.auth.userId) {
+        res.status(403).json({ message: "Requête non autorisée !!" });
+      } else {
+        const ratings = book.ratings || [];
+        const userId = req.auth.userId;
+        const newRating = parseFloat(bookObject.ratings[0].grade);
 
-  try {
-    const book = await bookModel.findOne({ _id: req.params.id });
+        const userRatingIndex = ratings.findIndex(
+          (rating) => rating.userId === userId
+        );
 
-    if (!book) {
-      return res.status(404).json({ message: "Le livre n'a pas été trouvé." });
-    }
+        if (userRatingIndex !== -1) {
+          ratings[userRatingIndex].grade = newRating;
+        } else {
+          ratings.push({ userId, grade: newRating });
+        }
 
-    if (book.userId !== req.auth.userId) {
-      return res.status(401).json({ message: "Non autorisé" });
-    }
-
-    // Mise à jour de la note si elle est fournie
-    if (bookObject.rating !== undefined) {
-      const userRating = book.ratings.find(
-        (rating) => rating.userId === req.auth.userId
-      );
-
-      if (!userRating) {
-        return res
-          .status(400)
-          .json({ message: "L'utilisateur n'a pas encore noté ce livre." });
+        const totalRating = ratings.reduce(
+          (sum, rating) => sum + rating.grade,
+          0
+        );
+        const averageRating = totalRating / ratings.length;
+        bookModel
+          .updateOne(
+            { _id: id },
+            { ...bookObject, _id: id, ratings, averageRating }
+          )
+          .then(() =>
+            res.status(200).json({ message: "Objet modifié avec succés!" })
+          )
+          .catch((error) => res.status(401).json({ error }));
       }
-
-      if (bookObject.rating < 0 || bookObject.rating > 5) {
-        return res
-          .status(400)
-          .json({ message: "La note doit être comprise entre 0 et 5." });
-      }
-
-      userRating.grade = bookObject.rating;
-
-      const totalRatings = book.ratings.length;
-      const sumRatings = book.ratings.reduce(
-        (sum, rating) => sum + rating.grade,
-        0
-      );
-      book.averageRating = sumRatings / totalRatings;
-    }
-
-    // Mise à jour des autres propriétés du livre
-    Object.assign(book, bookObject);
-
-    await book.save();
-
-    res.status(200).json({ message: "Objet modifié !" });
-  } catch (error) {
-    console.error(error);
-    res
-      .status(500)
-      .json({
-        error: "Une erreur est survenue lors de la modification du livre.",
-      });
-  }
+    })
+    .catch((error) => res.status(500).json({ error }));
 };
