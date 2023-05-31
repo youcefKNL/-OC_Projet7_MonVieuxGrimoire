@@ -9,9 +9,14 @@ exports.rateBook = async (req, res) => {
     const book = await Book.findById(id);
     const alreadyRating = book.ratings.find((req) => req.userId === userId);
     if (alreadyRating) {
-      return res
-        .status(400)
-        .json({ message: "L'utilisateur a déjà noté ce livre." });
+      // return res
+      //   .status(400)
+      //   .json({ message: "L'utilisateur a déjà noté ce livre." });
+      // Si l'utilisateur a déjà noté le livre, mettez à jour sa note
+      existingRating.grade = rating;
+    } else {
+      // Si l'utilisateur n'a pas encore noté le livre, ajoutez une nouvelle notation
+      book.ratings.push({ userId, grade: rating });
     }
 
     // Vérifiez si la note est valide (entre 0 et 5)

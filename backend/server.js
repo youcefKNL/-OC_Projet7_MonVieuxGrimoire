@@ -3,8 +3,9 @@ const http = require("http"); // Package  création server et gère requête et 
 const app = require("./app");
 
 const serverController = require("./middlewares/server.middleware");
+const { log } = require("console");
 
-const port = serverController.normalizePort(process.env.PORT || "5000");
+const port = serverController.normalizePort(process.env.PORT || "4000");
 
 app.set("port", port);
 

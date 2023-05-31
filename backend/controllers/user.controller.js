@@ -4,6 +4,8 @@ const jwt = require("jsonwebtoken"); //Package gère les token
 
 const User = require("../models/User.model");
 
+// *****************************************************************************************
+
 exports.signUp = (req, res) => {
   bcrypt
     .hash(req.body.password, 10)
@@ -19,12 +21,14 @@ exports.signUp = (req, res) => {
           res.status(201).json({ message: "Utilisateur créé! ID:" + user._id });
         })
         .catch((error) => {
-          // console.log(error); // Affiche l'erreur dans la console QUESTION???
+          console.log("Utilisateur non crée! ID:" + user._id + error);
           res.status(400).json({ error }); //ou .send
         });
     })
     .catch((error) => res.status(500).json({ error }));
 };
+
+// *****************************************************************************************
 
 exports.logIn = (req, res) => {
   User.findOne({ email: req.body.email })
