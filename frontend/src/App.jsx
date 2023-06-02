@@ -20,8 +20,12 @@ function App() {
   useEffect(() => {
     setUser(connectedUser);
   }, [connectedUser]);
+  let basename = "/";
+if (window.location.hostname === "youcefknl.github.io") {
+  basename = "/OC_Projet7_MonVieuxGrimoire/";
+}
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <div>
         <ScrollToTop />
         <Header user={user} setUser={setUser} />
@@ -39,3 +43,5 @@ function App() {
 }
 
 export default App;
+
+
