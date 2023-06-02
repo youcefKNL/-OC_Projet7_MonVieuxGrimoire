@@ -20,6 +20,10 @@ const authMiddleware = require("../middlewares/auth.middleware");
 
 const resizeImg = require("../middlewares/resizeImg.middleware");
 
+// *************************TEST CRYPTO***********************************
+// const encryptionImg = require("../middlewares/encryptionImg.middleware");
+// const decryptionImg = require("../middlewares/decryptionImg.middleware");
+
 // ***************************ROUTES**************************************
 
 router.get("/", getAllBooks);
