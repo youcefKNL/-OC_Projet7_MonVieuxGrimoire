@@ -6,8 +6,8 @@
 </p>
 
 
-<p align="center">
-Voici le lien vers l'application React déployée sur Github :<br/>https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire/ <br/>(**![ALERTE](wing.png) Veuillez noter que l'API est déployée gratuitement sur Render, ce qui peut entraîner un délai d'attente de -1 minute si le serveur est mis en veille en cas d'inactivité. Nous vous remercions de votre compréhension.![ALERTE](wing.png)**)</p>
+<div align="center">
+Voici le lien vers l'application React déployée sur Github :<br/>https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire/ <br/>(**<p align="center"><img src="wing.png" /></p> Veuillez noter que l'API est déployée gratuitement sur Render, ce qui peut entraîner un délai d'attente de -1 minute si le serveur est mis en veille en cas d'inactivité. Nous vous remercions de votre compréhension.<p align="center"><img src="wing.png" /></p>**)</div>
 
 ## Tester en local le site et l'ensemble des fonctionnalités:
 
