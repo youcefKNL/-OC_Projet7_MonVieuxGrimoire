@@ -5,9 +5,12 @@
   <img src="https://badges.frapsoft.com/os/v1/open-source-200x33.png?v=103">
 </p>
 
+<div align="center">
+  <img src="node-express-mongo.jpg" alt="Node Express Mongo" width="300" />
+</div>
 
 <div align="center">
-Voici le lien vers l'application React déployée sur Github :<br/>https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire/ <br/>(**<p align="center"><img src="wing.png" /></p> Veuillez noter que l'API est déployée gratuitement sur Render, ce qui peut entraîner un délai d'attente de -1 minute si le serveur est mis en veille en cas d'inactivité. Nous vous remercions de votre compréhension.<p align="center"><img src="wing.png" /></p>**)</div>
+Voici le lien vers l'application React déployée sur Github :<br/>https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire/ <br/><p align="center"><img src="wing.png" /></p> Veuillez noter que l'API est déployée gratuitement sur Render, ce qui peut entraîner un délai d'attente de -1 minute si le serveur est mis en veille en cas d'inactivité. Nous vous remercions de votre compréhension.<p align="center"><img src="wing.png" /></p></div>
 
 ## Tester en local le site et l'ensemble des fonctionnalités:
 
@@ -18,10 +21,6 @@ Voici le lien vers l'application React déployée sur Github :<br/>https://youce
 5.  Démarrer le serveur backend : `cd backend && npm run server`
 6.  Enjoy!
 
-
-<div align="center">
-  <img src="node-express-mongo.jpg" alt="Node Express Mongo" width="300" />
-</div>
 
 
 ![Logo](https://meilleur-mooc.fr/wp-content/uploads/2021/11/Openclassrooms.png)
