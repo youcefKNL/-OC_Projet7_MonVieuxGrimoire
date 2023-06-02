@@ -20,7 +20,7 @@ Voici le lien vers l'application React déployée sur Github :<br/>https://youce
 
 
 <div align="center">
-  <img src="node-express-mongo.jpg" alt="Node Express Mongo" />
+  <img src="node-express-mongo.jpg" alt="Node Express Mongo" width="300" />
 </div>
 
 
