@@ -26,7 +26,7 @@ function App() {
   if (window.location.hostname === "youcefknl.github.io") {
     basename = "/OC_Projet7_MonVieuxGrimoire";
   } else if (window.location.hostname === "localhost") {
-    basename = "";
+    basename = "/";
   }
   return (
     <BrowserRouter  basename={basename}>
