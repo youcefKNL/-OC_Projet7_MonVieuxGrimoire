@@ -5,7 +5,7 @@ const corsOptions = {
   // Autoriser toutes les origines
   origin: [
     "http://localhost:3000",
-    "https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire/",
+    "https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire",
   ],
   // En-têtes autorisés
   allowedHeaders:
