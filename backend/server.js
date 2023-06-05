@@ -3,7 +3,6 @@ const http = require("http"); // Package  création server et gère requête et 
 const app = require("./app");
 
 const serverController = require("./middlewares/server.middleware");
-const { log } = require("console");
 
 const port = serverController.normalizePort(process.env.PORT || "4000");
 
@@ -19,8 +18,14 @@ server.on("error", serverController.errorHandler);
 server.on("listening", () => {
   const address = server.address();
   const bind = typeof address === "string" ? "pipe " + address : "port " + port;
-  console.log("Serveur en éxécution sur le " + bind);
-  console.log("Simulation serveur URL: http://localhost:" + port);
+  let serverURL;
+  if (process.env.NODE_ENV === "production") {
+    serverURL = "https://backendmonvieuxgrimoire.onrender.com";
+  } else {
+    serverURL = "http://localhost:" + port;
+  }
+  console.log("Serveur en exécution sur le " + bind);
+  console.log("Simulation serveur URL: " + serverURL);
 });
 // Mettre en route le serveur sur port spécifié
 server.listen(port);

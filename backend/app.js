@@ -16,6 +16,8 @@ const userRoute = require("./routes/user.routes");
 
 const corsMiddleware = require("./middlewares/cors.middleware");
 
+const { octetNullDetection } = require("./config/octetNullDetection");
+
 require("dotenv").config({ path: "config/.env" });
 
 // ***************************************************************************************************************//
@@ -26,6 +28,9 @@ connectApi();
 //*************************************-Custom le Headers des requêtes!
 
 app.use(corsMiddleware);
+
+// ************************************-Vérification des octets nuls dans l'URL
+app.use(octetNullDetection);
 
 //*************************************-Récuperer la data sous forme Json
 app.use(bodyParser.json()); // <= ancienne technique / new => app.use(express.json())
