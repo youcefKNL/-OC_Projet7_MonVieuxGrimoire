@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OC_Projet7_MonVieuxGrimoire/static/css/main.aefc5a44.css",
-    "main.js": "/OC_Projet7_MonVieuxGrimoire/static/js/main.39f15209.js",
+    "main.js": "/OC_Projet7_MonVieuxGrimoire/static/js/main.926e528e.js",
     "static/js/787.2c0e5b38.chunk.js": "/OC_Projet7_MonVieuxGrimoire/static/js/787.2c0e5b38.chunk.js",
     "static/media/home_banner.jpg": "/OC_Projet7_MonVieuxGrimoire/static/media/home_banner.e160219c56381f5d72be.jpg",
     "static/media/book_delete.png": "/OC_Projet7_MonVieuxGrimoire/static/media/book_delete.f0aec92a2dde895664ec.png",
@@ -10,11 +10,11 @@
     "static/media/map_footer.png": "/OC_Projet7_MonVieuxGrimoire/static/media/map_footer.a4eb4130dd9828775917.png",
     "index.html": "/OC_Projet7_MonVieuxGrimoire/index.html",
     "main.aefc5a44.css.map": "/OC_Projet7_MonVieuxGrimoire/static/css/main.aefc5a44.css.map",
-    "main.39f15209.js.map": "/OC_Projet7_MonVieuxGrimoire/static/js/main.39f15209.js.map",
+    "main.926e528e.js.map": "/OC_Projet7_MonVieuxGrimoire/static/js/main.926e528e.js.map",
     "787.2c0e5b38.chunk.js.map": "/OC_Projet7_MonVieuxGrimoire/static/js/787.2c0e5b38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aefc5a44.css",
-    "static/js/main.39f15209.js"
+    "static/js/main.926e528e.js"
   ]
 }
