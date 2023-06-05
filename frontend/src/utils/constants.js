@@ -1,7 +1,7 @@
 // ****** CHOISIR LA BONNE CONSTANTE SI TEST EN LOCAL ***** //
 
-//const API_URL = "http://localhost:4000";
 const API_URL = "https://backendmonvieuxgrimoire.onrender.com";
+//const API_URL = "http://localhost:4000";
 
 export const API_ROUTES = {
   SIGN_UP: `${API_URL}/api/auth/signup`,
