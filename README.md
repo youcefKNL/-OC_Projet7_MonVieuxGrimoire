@@ -10,18 +10,17 @@
 </div>
 
 <div align="center">
-Voici le lien vers l'application React déployée sur Github :<br/>https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire/ <br/><p align="center"><img src="wing.png" /></p> Veuillez noter que l'API est déployée gratuitement sur Render, ce qui peut entraîner un délai d'attente de -1 minute si le serveur est mis en veille en cas d'inactivité. Nous vous remercions de votre compréhension.<p align="center"><img src="wing.png" /></p></div>
+Voici le lien vers l'application React déployée sur Github :<br/>https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire/ <br/><p align="center"><img src="wing.png" /></p> Veuillez noter que l'API est déployée gratuitement sur Render, ce qui peut entraîner un délai d'attente de -1 minute si le serveur est mis en veille en cas d'inactivité.Les Images Chargées depuis le serveur Render qui passe du mode Inactif à Actif ne seront plus visibles. lA VITESSE DES REQUÊTES PEUT ÊTRE RALENTI PAR RENDER. Nous vous remercions de votre compréhension.<p align="center"><img src="wing.png" /></p></div>
 
 ## Tester en local le site et l'ensemble des fonctionnalités:
 
 1.  Clonez le dépôt: `gh repo clone youcefKNL/OC_Projet7_MonVieuxGrimoire`
 2.  Installer les dépendances pour le dossier frontend : `cd frontend && npm install`
 3.  Installer les dépendances pour le dossier backend : `cd backend && npm install`
-4.  Démarrer l'application frontend : `cd frontend && npm start`
-5.  Démarrer le serveur backend : `cd backend && npm run server`
-6.  Enjoy!
-
-
+4.  Modifier le bon URL de fetch de l'API (de base fetch / Render) dans : `cd frontend/src/utils/constants.js`
+5.  Démarrer l'application frontend : `cd frontend && npm start`
+6.  Démarrer le serveur backend : `cd backend && npm run server`
+7.  Enjoy!
 
 ![Logo](https://meilleur-mooc.fr/wp-content/uploads/2021/11/Openclassrooms.png)
 
@@ -37,18 +36,16 @@ Voici le lien vers l'application React déployée sur Github :<br/>https://youce
 <img src="src/assets/icon/build-with-react.svg">
 </p>
 
-# Développez le back-end d'un site de notation de livres
+# Développez le back-end d'un site de notation de livres . Only Back-end !!
 
 Mon Vieux Grimoire - Création From Scratch d'un back-end
 (Projet 7 - Formation en Web Développement - Openclassrooms)
 
 ## Scénario
 
-Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu.  
+Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu.
 
-Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres.  
-
-
+Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres.
 
 ## Mail RECU
 
@@ -103,6 +100,7 @@ Salut,
 Une fois que tu auras terminé, je te propose qu’on fasse un point tous les deux pour que tu me présentes ton code, et qu’on vérifie que l’application fonctionne bien. Ensuite je pourrai envoyer tout ça au client, et lui présenter le site finalisé.
 
 Pièces jointes :
+
 - [Spécifications techniques de l’API](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/DW_P7+Back-end/DW+P7+Back-end+-+Specifications+API.pdf)
 - [Code du front-end sur GitHub](https://github.com/OpenClassrooms-Student-Center/P7-Dev-Web-livres)
 

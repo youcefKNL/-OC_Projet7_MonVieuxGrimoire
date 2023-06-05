@@ -13,16 +13,20 @@ import UpdateBook from './pages/updateBook/UpdateBook';
 import { useUser } from './lib/customHooks';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
+
+
 function App() {
   const [user, setUser] = useState(null);
   const { connectedUser } = useUser();
-
+  
   useEffect(() => {
     setUser(connectedUser);
   }, [connectedUser]);
   let basename = "/";
   if (window.location.hostname === "youcefknl.github.io") {
     basename = "/OC_Projet7_MonVieuxGrimoire";
+  } else if (window.location.hostname === "localhost") {
+    basename = "";
   }
   return (
     <BrowserRouter  basename={basename}>
