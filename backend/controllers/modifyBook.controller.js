@@ -30,16 +30,16 @@ exports.modifyBook = (req, res) => {
   ) {
     console.log("Détection de données dangereuses !");
     console.log("Utilisateur coupable :", req.auth.userId);
-    res
-      .status(400)
-      .json({ message: "Données dangereuses détectées ! You are WANTED..." });
+    res.status(400).jsonSerialized({
+      message: "Données dangereuses détectées ! You are WANTED...",
+    });
     return;
   }
   bookModel
     .findById(id)
     .then((book) => {
       if (book.userId !== req.auth.userId) {
-        res.status(403).json({ message: "Requête non autorisée !" });
+        res.status(403).jsonSerialized({ message: "Requête non autorisée !" });
       } else {
         //Logique supression ancienne image pour remplacer GreenCode
         // Récupérer l'ancienne URL de l'image
@@ -65,13 +65,15 @@ exports.modifyBook = (req, res) => {
                 }
               });
             }
-            res.status(200).json({ message: "Objet modifié avec succès !" });
+            res
+              .status(200)
+              .jsonSerialized({ message: "Objet modifié avec succès !" });
           })
-          .catch((error) => res.status(401).json({ error }));
+          .catch((error) => res.status(401).jsonSerialized({ error }));
       }
     })
     .catch((error) => {
       console.log(error);
-      res.status(500).json({ error });
+      res.status(500).jsonSerialized({ error });
     });
 };

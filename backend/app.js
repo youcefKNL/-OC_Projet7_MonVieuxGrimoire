@@ -2,6 +2,8 @@ const express = require("express");
 
 const bodyParser = require("body-parser"); //Package gére à analyser data dans corps des requêtes
 
+const cookieParser = require("cookie-parser"); //Package qui gere les cookies
+
 const path = require("path"); // Package qui gère le chemin des fichier
 
 const app = express();
@@ -20,6 +22,16 @@ const { octetNullDetection } = require("./config/octetNullDetection");
 
 require("dotenv").config({ path: "config/.env" });
 
+const helmet = require("helmet");
+
+const limiter = require("./config/rateLimit");
+
+const jsonSerialized = require("./config/serializedJson");
+
+const winston = require("winston");
+
+const { logError, logData } = require("./config/log");
+
 // ***************************************************************************************************************//
 //*************************************-Connexion à Data Base MongoDb
 connectApi();
@@ -27,16 +39,37 @@ connectApi();
 // ***************************************************************************************************************//
 //*************************************-Custom le Headers des requêtes!
 
+app.use(helmet());
+app.use(
+  helmet.crossOriginResourcePolicy({
+    policy: "cross-origin",
+  })
+);
+
 app.use(corsMiddleware);
 
 // ************************************-Vérification des octets nuls dans l'URL
 app.use(octetNullDetection);
+
+// ************************************-Vérification des limites Requêtes
+app.use(limiter);
 
 //*************************************-Récuperer la data sous forme Json
 app.use(bodyParser.json()); // <= ancienne technique / new => app.use(express.json())
 
 //*************************************-Récuperer la data encodé sous forme URL
 app.use(bodyParser.urlencoded({ extended: true }));
+
+//*************************************-Récuperer la data encodé sous Cookies
+app.use(cookieParser());
+
+//*************************************-Sérializé(codé) les JSON en transit Back&Front
+app.use(jsonSerialized);
+
+//*************************************-Journal de LOG *TEST* d'information
+app.use(logData);
+
+app.use(logError);
 
 // ***************************************************************************************************************//
 //*************************************-1er ROUTES TEST :

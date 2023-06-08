@@ -73,10 +73,10 @@ exports.addBook = (req, res) => {
       console.log(
         `Livre ajouté dans la Base de données => Titre: ${cleanBookObject.title}`
       );
-      res.status(201).json({ message: "Livre enregistré!", book });
+      res.status(201).jsonSerialized({ message: "Livre enregistré!", book });
     })
     .catch((error) => {
       console.log(error);
-      res.status(400).json({ error });
+      res.status(400).jsonSerialized({ error });
     });
 };

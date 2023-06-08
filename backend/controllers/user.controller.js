@@ -91,7 +91,7 @@ exports.signUp = (req, res) => {
     const errorMessage =
       "Le mot de passe ne respecte pas les critères de sécurité : " +
       validationResult.join(", ");
-    return res.status(400).json({ error: errorMessage });
+    return res.status(400).jsonSerialized({ error: errorMessage });
   }
   //Si ok il hach et sel en MM temps pour stocker in dataBase
   argon2
@@ -105,15 +105,48 @@ exports.signUp = (req, res) => {
         .save()
         .then(() => {
           console.log("Utilisateur créé! ID:" + user._id);
-          res.status(201).json({ message: "Utilisateur créé! ID:" + user._id });
+          res
+            .status(201)
+            .jsonSerialized({ message: "Utilisateur créé! ID:" + user._id });
         })
         .catch((error) => {
           console.log("Utilisateur non créé! ID:" + user._id + error);
-          res.status(400).json({ error });
+          res.status(400).jsonSerialized({ error });
         });
     })
-    .catch((error) => res.status(500).json({ error }));
+    .catch((error) => res.status(500).jsonSerialized({ error }));
 };
+
+// exports.logIn = (req, res) => {
+//   User.findOne({ email: req.body.email })
+//     .then((user) => {
+//       if (!user) {
+//         return res
+//           .status(401)
+//           .json({ message: "Paire login/mot de passe incorrecte" });
+//       }
+//       argon2
+//         .verify(user.password, req.body.password)
+//         .then((valid) => {
+//           if (!valid) {
+//             return res
+//               .status(401)
+//               .json({ message: "Paire login/mot de passe incorrecte" });
+//           }
+
+//           res.status(200).json({
+//             userId: user._id,
+//             token: jwt.sign({ userId: user._id }, process.env.TOKEN, {
+//               expiresIn: "3h",
+//             }),
+//           });
+//         })
+//         .catch((error) => res.status(500).json({ error }));
+//     })
+//     .catch((error) => res.status(500).json({ error }));
+// };
+
+//******************************Avec cookies************************
 
 exports.logIn = (req, res) => {
   User.findOne({ email: req.body.email })
@@ -121,24 +154,33 @@ exports.logIn = (req, res) => {
       if (!user) {
         return res
           .status(401)
-          .json({ message: "Paire login/mot de passe incorrecte" });
+          .jsonSerialized({ message: "Paire login/mot de passe incorrecte" });
       }
       argon2
         .verify(user.password, req.body.password)
         .then((valid) => {
           if (!valid) {
-            return res
-              .status(401)
-              .json({ message: "Paire login/mot de passe incorrecte" });
+            return res.status(401).jsonSerialized({
+              message: "Paire login/mot de passe incorrecte",
+            });
           }
-          res.status(200).json({
+
+          const token = jwt.sign({ userId: user._id }, process.env.TOKEN, {
+            expiresIn: "3h",
+          });
+
+          res.cookie("jwt", token, {
+            maxAge: 3 * 60 * 60 * 1000, // Durée de validité du cookie en millisecondes (3h)
+            httpOnly: true, // Le cookie ne peut être accédé que par le serveur
+            secure: false, // Permet d'envoyer le cookie sur des connexions non sécurisées (HTTP)
+            sameSite: "strict", // Le cookie ne sera envoyé que pour des requêtes provenant du même site
+          });
+          res.status(200).jsonSerialized({
             userId: user._id,
-            token: jwt.sign({ userId: user._id }, process.env.TOKEN, {
-              expiresIn: "3h",
-            }),
+            token: token,
           });
         })
-        .catch((error) => res.status(500).json({ error }));
+        .catch((error) => res.status(500).jsonSerialized({ error }));
     })
-    .catch((error) => res.status(500).json({ error }));
+    .catch((error) => res.status(500).jsonSerialized({ error }));
 };

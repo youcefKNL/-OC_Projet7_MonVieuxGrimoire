@@ -15,17 +15,19 @@
     "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dompurify": "^3.0.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
     "fs": "^0.0.1-security",
+    "helmet": "^7.0.0",
     "http": "^0.0.1-security",
     "https": "^1.0.0",
     "jimp": "^0.22.8",
     "jsdom": "^22.1.0",
     "jsonwebtoken": "^9.0.0",
-    "libvips": "^0.0.2",
     "mkcert": "^1.5.1",
     "mongoose": "^7.1.1",
     "mongoose-unique-validator": "^4.0.0",
@@ -33,7 +35,10 @@
     "nodemon": "^2.0.22",
     "password-validator": "^5.3.0",
     "path": "^0.12.7",
+    "serialize-javascript": "^6.0.1",
     "star-rating": "^0.0.1",
-    "validator": "^13.9.0"
+    "validator": "^13.9.0",
+    "winston": "^3.9.0",
+    "winston-daily-rotate-file": "^4.7.1"
   }
 }

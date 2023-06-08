@@ -12,7 +12,7 @@ exports.rateBook = async (req, res) => {
     if (alreadyRated) {
       return res
         .status(400)
-        .json({ message: "L'utilisateur a déjà noté ce livre." });
+        .jsonSerialized({ message: "L'utilisateur a déjà noté ce livre." });
     }
     // Vérifiez si la note est valide (entre 1 et 5)
     if (rating < 1 || rating > 5) {
@@ -33,10 +33,10 @@ exports.rateBook = async (req, res) => {
 
     console.log("Note ajoutée avec succès à la moyenne !");
     // Renvoyez le livre mis à jour en réponse
-    res.json(book);
+    res.jsonSerialized(book);
   } catch (error) {
     console.error(error);
-    res.status(500).json({
+    res.status(500).jsonSerialized({
       message: "Une erreur est survenue lors de la notation du livre.",
     });
   }

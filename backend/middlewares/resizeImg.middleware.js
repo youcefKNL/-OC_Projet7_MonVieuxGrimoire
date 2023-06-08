@@ -25,7 +25,7 @@ const resizeImageMiddleware = async (req, res, next) => {
   } catch (error) {
     console.log("Une erreur est survenue lors du traitement de l'image !");
     console.error(error);
-    res.status(500).json({
+    res.status(500).jsonSerialized({
       error: "Une erreur est survenue lors du traitement de l'image !",
     });
   }

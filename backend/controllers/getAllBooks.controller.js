@@ -4,10 +4,10 @@ const bookModel = require("../models/Book.model");
 exports.getAllBooks = async (req, res) => {
   try {
     const books = await bookModel.find().sort({ averageRating: -1 }); //Trié par le best Rating
-    res.status(200).json(books);
+    res.status(200).jsonSerialized(books);
   } catch (error) {
     res
       .status(500)
-      .json({ error: "Erreur lors de la récupération des livres" });
+      .jsonSerialized({ error: "Erreur lors de la récupération des livres" });
   }
 };
