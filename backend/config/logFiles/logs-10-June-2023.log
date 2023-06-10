@@ -1,0 +1,194 @@
+[2023-06-10T14:02:54.827Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T14:05:23.904Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T14:08:12.059Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T14:18:52.720Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T14:25:25.643Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T14:25:26.863Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T14:25:31.241Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T14:28:39.667Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T14:28:48.535Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T14:29:59.708Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T14:30:13.434Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T14:30:20.768Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T14:33:09.075Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T14:33:13.897Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T14:34:03.343Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:34:55.522Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","csrfToken":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:37:00.489Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","csrfToken":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:38:52.050Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","csrfToken":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:40:23.653Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","csrfToken":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:41:19.343Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:44:45.512Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:46:10.554Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:46:15.556Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:48:33.501Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:48:58.015Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T14:50:57.989Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:13:18.749Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:15:59.577Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:18:07.908Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:19:07.004Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:19:12.978Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:19:45.044Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:19:48.599Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:20:14.900Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:20:20.304Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:20:38.785Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:21:36.193Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:24:34.078Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:25:54.485Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:27:16.762Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:27:20.497Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:27:23.051Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:30:00.009Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:35:44.866Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:35:47.204Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:35:55.615Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","X-CSRF-Token":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:36:03.657Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T18:36:26.914Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T18:38:02.860Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T18:38:09.907Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T18:40:04.609Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T18:42:55.007Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:42:55.030Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:42:55.097Z] [info] [GET] [/book_picture/mongodb_1686261194968_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:42:55.101Z] [info] [GET] [/book_picture/node2_1686246756674_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:43:01.724Z] [info] [POST] [/api/auth/login] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {"email":"khenichil_youcef@hotmail.fr"}
+[2023-06-10T18:43:01.938Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:43:01.944Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:43:10.378Z] [info] [GET] [/api/books/64824dcb8ff58c0e8ba843fb] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:43:10.387Z] [info] [GET] [/api/books/64824dcb8ff58c0e8ba843fb] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:43:10.439Z] [info] [GET] [/api/books/bestrating] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:43:10.445Z] [info] [GET] [/api/books/bestrating] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:43:11.886Z] [info] [GET] [/api/books/64824dcb8ff58c0e8ba843fb] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:43:11.889Z] [info] [GET] [/api/books/64824dcb8ff58c0e8ba843fb] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T18:43:16.734Z] [info] [PUT] [/api/books/64824dcb8ff58c0e8ba843fb] [IP: ::ffff:127.0.0.1] [UserID: 64808179d166fb842596ae3c] LOG_INFO:  {"userId":"64808179d166fb842596ae3c","title":"crypto2","author":"","year":2045,"genre":"ee"}
+[2023-06-10T18:46:22.975Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:47:22.239Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T18:47:30.273Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T19:08:31.894Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T19:08:57.292Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T19:10:36.471Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T19:11:39.908Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T19:13:07.605Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T19:13:20.108Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T19:13:50.226Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:15:04.011Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:15:39.928Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:19:00.810Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T19:19:07.192Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T19:20:49.244Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:20:57.971Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:23:50.216Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:23:54.215Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:24:14.929Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:24:19.039Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:24:24.959Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:24:29.357Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:24:33.864Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:24:37.083Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:26:58.642Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:27:04.578Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:27:38.139Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T19:27:47.446Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T19:28:20.192Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:28:55.064Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:29:26.048Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:29:32.491Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:29:51.726Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:30:14.991Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:30:23.619Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:30:33.078Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:39:39.135Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:39:53.581Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:41:54.696Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:41:58.934Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:45:38.641Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:45:47.746Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:45:54.969Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:46:00.807Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:46:04.539Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:46:08.818Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:48:40.623Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:48:54.359Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:51:23.696Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:52:56.565Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:53:31.673Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:55:50.669Z] [info] [GET] [/api/books/6480857aafaeb3250ce92dc2] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:56:07.925Z] [info] [GET] [/api/books/64824dcb8ff58c0e8ba843fb] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T19:57:41.756Z] [info] [POST] [/api/books/64824dcb8ff58c0e8ba843fb/rating] [IP: ::1] [UserID: 6469385200b5f6cb65a20053] LOG_INFO:  {"userId":"6469385200b5f6cb65a20053","rating":3}
+[2023-06-10T19:59:07.656Z] [info] [POST] [/api/books/64824dcb8ff58c0e8ba843fb/rating] [IP: ::1] [UserID: 6469385200b5f6cb65a20053] LOG_INFO:  {"userId":"6469385200b5f6cb65a20053","rating":3,"CSRF":"701wp7Ux6gisQUcyY3-kTQsX","_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T19:59:19.274Z] [info] [POST] [/api/books/64824dcb8ff58c0e8ba843fb/rating] [IP: ::1] [UserID: 6469385200b5f6cb65a20053] LOG_INFO:  {"userId":"6469385200b5f6cb65a20053","rating":3,"_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T19:59:27.514Z] [error] [undefined] [undefined] [IP: ::1] [UserID: undefined] LOG_Erreur: SyntaxError: Unexpected token } in JSON at position 104
+    at JSON.parse (<anonymous>)
+    at parse (/home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/body-parser/lib/types/json.js:92:19)
+    at /home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {}
+[2023-06-10T19:59:36.742Z] [info] [POST] [/api/books/64824dcb8ff58c0e8ba843fb/rating] [IP: ::1] [UserID: 6469385200b5f6cb65a20053] LOG_INFO:  {"userId":"6469385200b5f6cb65a20053","rating":3,"CSRF":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:00:12.408Z] [info] [POST] [/api/books/64824dcb8ff58c0e8ba843fb/rating] [IP: ::1] [UserID: 6469385200b5f6cb65a20053] LOG_INFO:  {"userId":"6469385200b5f6cb65a20053","rating":3,"CSRF":"701wp7Ux6gisQUcyY3-kTQsX","_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:00:35.894Z] [info] [POST] [/api/books/64824dcb8ff58c0e8ba843fb/rating] [IP: ::1] [UserID: 6469385200b5f6cb65a20053] LOG_INFO:  {"userId":"6469385200b5f6cb65a20053","rating":3,"CSRF":"701wp7Ux6gisQUcyY3-kTQsX","_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:16:19.449Z] [info] [POST] [/api/books/64824dcb8ff58c0e8ba843fb/rating] [IP: ::1] [UserID: 6469385200b5f6cb65a20053] LOG_INFO:  {"userId":"6469385200b5f6cb65a20053","rating":3,"CSRF":"701wp7Ux6gisQUcyY3-kTQsX","_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:17:10.628Z] [info] [POST] [/api/books/64824dcb8ff58c0e8ba843fb/rating] [IP: ::1] [UserID: 6469385200b5f6cb65a20053] LOG_INFO:  {"userId":"6469385200b5f6cb65a20053","rating":3,"CSRF":"701wp7Ux6gisQUcyY3-kTQsX","_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:17:47.860Z] [info] [GET] [/api/books/64824dcb8ff58c0e8ba843fb] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:17:56.615Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:18:05.154Z] [info] [POST] [/api/auth/signup/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T20:19:13.792Z] [info] [POST] [/api/auth/signup/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:21:16.677Z] [info] [POST] [/api/auth/signup/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:21:37.977Z] [info] [POST] [/api/auth/signup/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:21:57.376Z] [info] [POST] [/api/auth/signup/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:23:29.167Z] [info] [POST] [/api/auth/signup/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","_csrf":"_csrf=701wp7Ux6gisQUcyY3-kTQsX"}
+[2023-06-10T20:34:27.128Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T20:34:38.680Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:37:18.676Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:37:18.761Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:37:19.544Z] [info] [GET] [/book_picture/node2_1686246756674_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:37:19.843Z] [info] [GET] [/book_picture/node2_1686246756674_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:37:19.861Z] [info] [GET] [/book_picture/Creation_Univers_-_1920x1080_1686425300207_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:46:23.020Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:46:41.250Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T20:46:59.411Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:47:19.176Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T20:48:40.910Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T20:50:27.526Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"vK9umyOkAkna__h9xwgZMX7Q","_csrf":"vK9umyOkAkna__h9xwgZMX7Q"}
+[2023-06-10T20:51:08.235Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","CSRF":"s%3AEeSsITblQChWSymMnqk9zGCL_Nw2ZTxG.nw5WZJlVvJpmM7fLSF1EHlqhGLDyFSQbI2z%2BTuG5naU","_csrf":"s%3AEeSsITblQChWSymMnqk9zGCL_Nw2ZTxG.nw5WZJlVvJpmM7fLSF1EHlqhGLDyFSQbI2z%2BTuG5naU"}
+[2023-06-10T20:51:22.238Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","connect.sid":"s%3AEeSsITblQChWSymMnqk9zGCL_Nw2ZTxG.nw5WZJlVvJpmM7fLSF1EHlqhGLDyFSQbI2z%2BTuG5naU","_csrf":"s%3AEeSsITblQChWSymMnqk9zGCL_Nw2ZTxG.nw5WZJlVvJpmM7fLSF1EHlqhGLDyFSQbI2z%2BTuG5naU"}
+[2023-06-10T20:51:32.661Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","connect.sid":"s%3AEeSsITblQChWSymMnqk9zGCL_Nw2ZTxG.nw5WZJlVvJpmM7fLSF1EHlqhGLDyFSQbI2z%2BTuG5naU","_csrf":"s%3AEeSsITblQChWSymMnqk9zGCL_Nw2ZTxG.nw5WZJlVvJpmM7fLSF1EHlqhGLDyFSQbI2z%2BTuG5naU"}
+[2023-06-10T20:57:30.771Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld","connect.sid":"s%3AEeSsITblQChWSymMnqk9zGCL_Nw2ZTxG.nw5WZJlVvJpmM7fLSF1EHlqhGLDyFSQbI2z%2BTuG5naU","_csrf":"s%3AEeSsITblQChWSymMnqk9zGCL_Nw2ZTxG.nw5WZJlVvJpmM7fLSF1EHlqhGLDyFSQbI2z%2BTuG5naU"}
+[2023-06-10T20:57:59.608Z] [error] [undefined] [undefined] [IP: ::1] [UserID: undefined] LOG_Erreur: SyntaxError: Unexpected token } in JSON at position 75
+    at JSON.parse (<anonymous>)
+    at parse (/home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/body-parser/lib/types/json.js:92:19)
+    at /home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/youcef/Bureau/Code/OPENCLASSROOM/Projet OC/Project-7/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {}
+[2023-06-10T20:58:04.551Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T20:59:21.081Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T21:10:52.005Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T21:11:29.907Z] [info] [POST] [/api/auth/login/] [IP: ::1] [UserID: undefined] LOG_INFO:  {"email":"sophie.bluel@test.tld"}
+[2023-06-10T21:12:32.680Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:16:52.953Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:17:18.658Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:17:48.592Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:18:03.126Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:19:01.504Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:19:20.623Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:20:25.920Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:44:24.579Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:45:03.175Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:47:10.966Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:47:15.187Z] [info] [POST] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:47:46.200Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:47:59.567Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:48:23.683Z] [info] [POST] [/api/books/] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:58:12.130Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-10T21:58:23.878Z] [info] [GET] [/api/auth/test] [IP: ::1] [UserID: undefined] LOG_INFO:  {}

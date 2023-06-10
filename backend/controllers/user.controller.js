@@ -180,7 +180,7 @@ exports.logIn = (req, res) => {
             token: token,
           });
         })
-        .catch((error) => res.status(500).jsonSerialized({ error }));
+        .catch((error) => res.status(503).jsonSerialized({ error }));
     })
     .catch((error) => res.status(500).jsonSerialized({ error }));
 };

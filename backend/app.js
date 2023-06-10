@@ -28,10 +28,9 @@ const limiter = require("./config/rateLimit");
 
 const jsonSerialized = require("./config/serializedJson");
 
-const winston = require("winston");
-
 const { logError, logData } = require("./config/log");
 
+const xmlMiddleware = require("./config/xmlControl");
 // ***************************************************************************************************************//
 //*************************************-Connexion à Data Base MongoDb
 connectApi();
@@ -50,6 +49,9 @@ app.use(corsMiddleware);
 
 // ************************************-Vérification des octets nuls dans l'URL
 app.use(octetNullDetection);
+
+// ************************************-analyser les données XML
+app.use(xmlMiddleware);
 
 // ************************************-Vérification des limites Requêtes
 app.use(limiter);
@@ -76,6 +78,7 @@ app.use(logError);
 app.use("/api/auth", testRoute);
 
 //*************************************-ROUTES BOOK :
+//app.use("/api/books", bookRoutes);
 app.use("/api/books", bookRoutes);
 
 //*************************************-ROUTES AUTHentification :
