@@ -28,12 +28,12 @@ Voici le lien vers l'application React déployée sur Github :<br/>https://youce
 
 <p align="center">
   <img src="https://forthebadge.com/images/badges/powered-by-water.svg">
-  <img src="![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)">
-  <img src="![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)">
-  <img src="https://forthebadge.com/images/badges/uses-css.svg">
+  <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white">
+  <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB">
+<img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white">
 </p>
-<p align="center">
-<img src="![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)">
+
+<img src="src/assets/icon/build-with-react.svg">
 </p>
 
 # Développez le back-end d'un site de notation de livres . Only Back-end !!
