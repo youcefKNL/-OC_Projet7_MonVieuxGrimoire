@@ -21,20 +21,20 @@ const authMiddleware = require("../middlewares/auth.middleware");
 const resizeImg = require("../middlewares/resizeImg.middleware");
 
 // *************************TEST CRYPTO***********************************
-// const encryptionImg = require("../middlewares/encryptionImg.middleware");
-// const decryptionImg = require("../middlewares/decryptionImg.middleware");
+//const encryptImg = require("../middlewares/encryptionImg.middleware");
+//const decryptImg = require("../middlewares/decryptionImg.middleware");
 
 // ***************************ROUTES**************************************
 
 router.get("/", getAllBooks);
 
-router.post("/", authMiddleware, multer, resizeImg, addBook);
+router.post("/", authMiddleware, multer, addBook);
 
 router.get("/bestrating", getTopBooks);
 
 router.get("/:id", getBookById);
 
-router.put("/:id", authMiddleware, multer, resizeImg, modifyBook);
+router.put("/:id", authMiddleware, multer, modifyBook);
 
 router.delete("/:id", authMiddleware, deleteBook);
 

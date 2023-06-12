@@ -7,6 +7,7 @@
 
 <div align="center">
   <img src="node-express-mongo.jpg" alt="Node Express Mongo" width="300" />
+  <img src="owasp.jpg" alt="owasp top 10 2023" width="300" />
 </div>
 
 <div align="center">
@@ -115,11 +116,11 @@ Merci et bonne journée !”
 
 ## Building Backend from Scratch
 
-I built a API with a Node.js backend from scratch using the Express framework and MongoDB database.
+I built a API with a Node.js backend from scratch using the Express framework and MongoDB database. + Top 10 OWASP
 
 ## 🛠 Skills
 
-Node.js, Express, MongoDB
+Node.js, Express, MongoDB, back-end Security
 
 # Hi, I'm Youcef! 👋
 

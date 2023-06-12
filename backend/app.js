@@ -31,6 +31,7 @@ const jsonSerialized = require("./config/serializedJson");
 const { logError, logData } = require("./config/log");
 
 const xmlMiddleware = require("./config/xmlControl");
+
 // ***************************************************************************************************************//
 //*************************************-Connexion à Data Base MongoDb
 connectApi();
@@ -53,11 +54,14 @@ app.use(octetNullDetection);
 // ************************************-analyser les données XML
 app.use(xmlMiddleware);
 
-// ************************************-Vérification des limites Requêtes
+// ************************************-Vérification des limites Requêtes / SERVEUR
 app.use(limiter);
 
 //*************************************-Récuperer la data sous forme Json
 app.use(bodyParser.json()); // <= ancienne technique / new => app.use(express.json())
+
+//************************************* Limite de taille du JSON entrant
+app.use(express.json({ limit: "1mo" }));
 
 //*************************************-Récuperer la data encodé sous forme URL
 app.use(bodyParser.urlencoded({ extended: true }));
