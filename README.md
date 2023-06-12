@@ -6,8 +6,7 @@
 </p>
 
 <div align="center">
-  <img src="node-express-mongo.jpg" alt="Node Express Mongo" width="300" />
-  <img src="owasp.jpg" alt="owasp top 10 2023" width="300" />
+  <img src="node-express-mongo.jpg" alt="Node Express Mongo" width="300" height="200"/>                <img src="owasp.jpg" alt="owasp top 10 2023" width="300" height="200" />
 </div>
 
 <div align="center">
