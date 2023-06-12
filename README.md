@@ -33,9 +33,6 @@ Voici le lien vers l'application React déployée sur Github :<br/>https://youce
 <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white">
 </p>
 
-<img src="src/assets/icon/build-with-react.svg">
-</p>
-
 # Développez le back-end d'un site de notation de livres . Only Back-end !!
 
 Mon Vieux Grimoire - Création From Scratch d'un back-end
