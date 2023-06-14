@@ -1,0 +1,15 @@
+[2023-06-13T13:21:10.143Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:21:10.205Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:21:10.285Z] [info] [GET] [/book_picture/paul-hermann_1686654307669_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:21:10.311Z] [info] [GET] [/book_picture/node2_1686580655985_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:21:10.414Z] [info] [GET] [/book_picture/paul-hermann_1686654307669_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:21:10.429Z] [info] [GET] [/book_picture/node2_1686580655985_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:23:27.325Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:23:27.361Z] [info] [GET] [/api/books] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:23:27.506Z] [info] [GET] [/book_picture/node2_1686580655985_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:23:27.514Z] [info] [GET] [/book_picture/paul-hermann_1686654307669_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:23:27.620Z] [info] [GET] [/book_picture/paul-hermann_1686654307669_resized.jpg] [IP: ::ffff:127.0.0.1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:32:41.960Z] [info] [GET] [/book_picture/paul-hermann_1686654307669_resized.jpg] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:32:41.966Z] [info] [GET] [/book_picture/node2_1686580655985_resized.jpg] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:33:57.761Z] [info] [GET] [/book_picture/node2_1686580655985_resized.jpg] [IP: ::1] [UserID: undefined] LOG_INFO:  {}
+[2023-06-13T13:33:57.767Z] [info] [GET] [/book_picture/paul-hermann_1686654307669_resized.jpg] [IP: ::1] [UserID: undefined] LOG_INFO:  {}

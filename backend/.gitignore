@@ -1,7 +1,8 @@
 /node_modules
 # config/.env   in IRL
 config/https
-middlewares/encryptionImg.middleware.js
-middlewares/decryptionImg.middleware.js
+/middlewares/encryptionImg.middleware.js
+/middlewares/decryptionImg.middleware.js
+/hidefile
 
 
