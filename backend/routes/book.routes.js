@@ -28,13 +28,13 @@ const resizeImg = require("../middlewares/resizeImg.middleware");
 
 router.get("/", getAllBooks);
 
-router.post("/", authMiddleware, multer, addBook);
+router.post("/", authMiddleware, multer, resizeImg, addBook);
 
 router.get("/bestrating", getTopBooks);
 
 router.get("/:id", getBookById);
 
-router.put("/:id", authMiddleware, multer, modifyBook);
+router.put("/:id", authMiddleware, multer, resizeImg, modifyBook);
 
 router.delete("/:id", authMiddleware, deleteBook);
 
